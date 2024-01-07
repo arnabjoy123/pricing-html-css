@@ -48,20 +48,32 @@ section :nth-child(3){
 
   p{
     color: hsl(234, 14%, 74%);
+    display: flex;
+    align-items: center;
   } 
+
+  label{
+    margin: 0px 10px;
+  }
 
   html{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+
+
+    
   }
 
   body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-  
+    justify-content: center;
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, 0% 168%;
+
   }
 
   main{
@@ -71,12 +83,14 @@ section :nth-child(3){
 
   section{
     box-shadow: 0px 0px 40px 3px #5e5d5d;
+    width:200px;
   }
 
   section:nth-child(1){
     color: hsl(233, 13%, 49%);
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
+    background: rgb(255, 255, 255);
   }
 
   section:nth-child(2){
@@ -90,6 +104,7 @@ section :nth-child(3){
     color: hsl(233, 13%, 49%);
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+    background: rgb(255, 255, 255);
   }
 
 
@@ -125,8 +140,8 @@ ul{
     border:none;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif; 
-    color: hsl(237, 63%, 64%) ;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(237, 63%, 64%);
   }
 
   .bt{
@@ -135,6 +150,8 @@ ul{
     color: white;
 
   }
+
+  /*slider css attribute below*/
 
 .switch {
   position: relative;
@@ -199,6 +216,13 @@ input:checked + .slider:before {
 }
 
 
+/* switch attributes end here */
+
+
+.hide-element {
+  display: none;
+}
+
 
 @media(max-width:500px){
 
@@ -209,6 +233,12 @@ input:checked + .slider:before {
   section{
     margin: 10px 0px;
     border-radius: 5%;
+  }
+
+  body{
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, 0% 100%;
   }
 
 }
